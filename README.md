@@ -1,1 +1,4 @@
-"# CompetitionProgDictionary" 
+# How to Build
+```
+npm init
+```
