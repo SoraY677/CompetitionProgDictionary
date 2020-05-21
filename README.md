@@ -1,4 +1,6 @@
 # How to Build
-```
-npm init
+```node
+npm init // node Initialize
+
+npm start // start Application
 ```
