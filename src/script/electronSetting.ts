@@ -1,6 +1,8 @@
 const { app, BrowserWindow } = require('electron')
 
-function createWindow () {
+
+
+function createWindow() {
   let win = new BrowserWindow({
     width: 800,
     height: 600,
@@ -9,6 +11,9 @@ function createWindow () {
     }
   })
 
-  win.loadFile('index.html')
+  win.loadFile('../index.html')
+}
+
+export function execApp() {
   app.whenReady().then(createWindow)
 }

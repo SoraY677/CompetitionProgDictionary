@@ -2,6 +2,7 @@
   "name": "competitionprogdictionary",
   "version": "1.0.0",
   "description": "\"# CompetitionProgDictionary\"",
+  "type": "module",
   "main": "main.ts",
   "scripts": {
     "start": "electron ."
