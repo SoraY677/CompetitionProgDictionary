@@ -1,3 +1,5 @@
-import { execApp } from "./src/script/electronSetting"
+import { exec } from "./src/script/electronSetting"
 
-execApp();
+exec();
+
+
