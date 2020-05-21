@@ -2,7 +2,7 @@
   "name": "competitionprogdictionary",
   "version": "1.0.0",
   "description": "\"# CompetitionProgDictionary\"",
-  "main": "main.js",
+  "main": "main.ts",
   "scripts": {
     "start": "electron ."
   },
@@ -18,5 +18,9 @@
   "homepage": "https://github.com/SoraY677/CompetitionProgDictionary#readme",
   "devDependencies": {
     "electron": "^9.0.0"
+  },
+  "dependencies": {
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
   }
 }
