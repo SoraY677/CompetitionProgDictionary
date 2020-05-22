@@ -10,7 +10,7 @@ function createWindow() {
     }
   })
 
-  win.loadFile(path.join(app.getAppPath(), 'src', 'index.html'))
+  win.loadFile(path.join(app.getAppPath(), 'static', 'index.html'))
 }
 
 export function exec() {
