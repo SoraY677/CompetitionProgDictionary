@@ -4,7 +4,8 @@
   "description": "\"# CompetitionProgDictionary\"",
   "main": "./dist/main.js",
   "scripts": {
-    "build": "webpack",
+    "dev": "webpack --mode=development & electron .",
+    "build": "webpack --mode=production",
     "start": "electron ."
   },
   "repository": {
