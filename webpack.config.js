@@ -1,25 +1,28 @@
 const path = require('path');
 
 module.exports = {
-  mode:'development',
-  entry: './main.ts', 
+  mode:'production',
+  entry: __dirname + '/src/script/main.ts', 
   target:"node",
   module:{
     rules: [
       {
-        // 拡張子 .ts の場合
         test: /\.ts$/,
-        // TypeScript をコンパイルする
         use: 'ts-loader',
       },
     ],
   },
   output: {
-    path: __dirname + '/dist',
-    filename: 'main.js'
+    path: __dirname + "/dist",
+    filename: 'main.js',
+    libraryTarget: 'commonjs2'
   },
   resolve:{
     extensions: ['.ts'],
-    modules:[path.resolve(__dirname, "src/script"),"node_modules"]
-  }
+    modules:[path.resolve(__dirname, "src","script"),"node_modules"]
+  },
+  externals: [ // こいつらは一つにしません！*2
+    'electron',
+    'fs'
+  ],
 };
