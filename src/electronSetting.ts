@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron')
+import path from "path"
 
 function createWindow() {
   let win = new BrowserWindow({
@@ -9,6 +10,9 @@ function createWindow() {
     }
   })
 
-  win.loadFile('index.html')
+  win.loadFile(path.join(app.getAppPath(), 'static', 'index.html'))
 }
-app.whenReady().then(createWindow)
+
+export function exec() {
+  app.whenReady().then(createWindow)
+}

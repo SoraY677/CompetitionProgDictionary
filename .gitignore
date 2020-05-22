@@ -1,8 +1,10 @@
 # public 
 node_modules
+dist
 
 
 ##############################
 
 # private
+main.js
 
